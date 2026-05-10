@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <input type="value" readonly id="display">
+        </div>
+    
+    <div class="numbers">
+    <div class="icons">
+        <div class="first-row">
+<p onclick="clearScreen()">C</p>
+    <p onclick="appendvalue('+/-')">+/-</p>
+    <p onclick="appendvalue('%')">%</p>
+    <p onclick="appendvalue('/')"><span>/</span></p>
+        </div>
+    
+        <div class="second-row">
+    <p onclick="appendvalue('7')">7</p>
+    <p onclick="appendvalue('8')">8</p>
+    <p onclick="appendvalue('9')">9</p>
+    <p onclick="appendvalue('*')"><span>*</span></p>
+</div>
+    
+<div class="third-row">
+    <p onclick="appendvalue('4')">4</p>
+    <p onclick="appendvalue('5')">5</p>
+    <p onclick="appendvalue('6')">6</p>
+    <p onclick="appendvalue('-')"><span>-</span></p>
+</div>
+    
+<div class="fourth-row">
+<p onclick="appendvalue('1')">1</p>
+    <p onclick="appendvalue('2')">2</p>
+    <p onclick="appendvalue('3')">3</p>
+    <p onclick="appendvalue('+')"><span>+</span></p>
+</div>
+    
+<div class="fifth-row">
+    <p onclick="appendvalue('0')">0</p>
+    <p onclick="appendvalue('00')">00</p>
+    <p onclick="appendvalue('.')">.</p>
+    <p onclick="calculateScreen()"><span>=</span></p>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    <script src="calc.js"></script>
+
+
+</body>
+</html>
