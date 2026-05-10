@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: white;
+    color: white;
+}
+.screen{
+    width: 100%;
+    height: auto;
+}
+.container .screen input{
+    margin-left: -8.5px;
+    margin-top: 60px;
+width: 348px;
+height: 100%;
+color: black;
+padding: 15px;
+font-size: 18px;
+}
+.container{
+    padding-left: 10px;
+    margin:40px 0px ;
+    width: 350px;
+    height: 100vh;
+    background: rgb(9, 0, 0);
+    border-radius: 30px;
+    position: relative;
+
+}
+
+ .icons {
+    
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
+
+
+.first-row{
+      display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0px 10px;
+    gap: 35px;
+    position: absolute;
+    
+}
+.first-row p{
+    width: 50px;
+    height: 50px;
+    background: rgb(82, 79, 79);
+    border-radius: 50%;
+    text-align: center;
+}
+/* Continuing from where you left off */
+
+/* Styling for all rows to ensure consistent spacing and alignment */
+.second-row, .third-row, .fourth-row, .fifth-row {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0px 10px;
+    gap: 35px;
+    position: absolute;
+}
+
+/* Common styling for all button circles */
+.second-row p, .third-row p, .fourth-row p, .fifth-row p {
+    width: 50px;
+    height: 50px;
+    background: #333333; /* Darker grey for number buttons */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px; /* Centers text vertically */
+    cursor: pointer;
+}
+
+/* Positioning each row vertically */
+.first-row { top: 150px; }
+.second-row { top: 220px; }
+.third-row { top: 290px; }
+.fourth-row { top: 360px; }
+.fifth-row { top: 430px; }
+
+/* Styling the orange operator buttons */
+span {
+    background-color: #ff9f0a;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Special styling for the '0' button to make it wider */
+.fifth-row .spec {
+    width: 135px; /* Spans across two columns */
+    border-radius: 50px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Hover effect for better UX */
+p:hover {
+    filter: brightness(1.2);
+}
+
+span:active {
+    background-color: #fcc16d;
+}
